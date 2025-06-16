@@ -12,7 +12,7 @@ import java.time.Period;
 public class Victima {
     private String cedula;
     private String nombre;
-    private String fechaNacimiento;
+    private LocalDate fechaNacimiento;
     private String genero;
     private String correo;/*estos no se ven < */
     private String telefono;
@@ -27,7 +27,7 @@ public class Victima {
 
     
     
-    public Victima(String cedula, String nombreHash, String fechaNacimiento, String genero, String correo, String telefono, String direccion) {
+    public Victima(String cedula, String nombreHash, String LocalDate, String genero, String correo, String telefono, String direccion) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
@@ -49,7 +49,7 @@ public class Victima {
         return nombre;
     }
 
-    public String getFechaNacimiento() {
+    public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
@@ -59,7 +59,7 @@ public class Victima {
 
     /*calcular la edad*/
     
-    public int calculaEdad(String fechaNacimiento){
+    public int calculaEdad(LocalDate fechaNacimiento){
         return Period.between(fechaNacimiento, LocalDate.now()).getYears();
     
     }
