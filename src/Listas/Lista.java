@@ -4,7 +4,7 @@
 package Listas;
 
 public interface Lista <T>{
-    void Agregar(T obj);
-    void Eliminar(String id);
-    T Buscar(String id);
+    void Agregar(T t);
+    void Eliminar(T t);
+    T Buscar(Object id);
 }
