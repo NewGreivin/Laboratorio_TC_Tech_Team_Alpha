@@ -9,5 +9,23 @@ package Casos;
  * @author Jonathan
  */
 public enum PrioridadEnum {
+    ALTA("Alta"),
+    MEDIA("Media"),
+    BAJA("Baja");
     
+    private final String prioridad;
+
+    private PrioridadEnum(String prioridad) {
+        this.prioridad = prioridad;
+    }
+
+    public String getPrioridad() {
+        return prioridad;
+    }
+
+    @Override
+    public String toString() {
+        return prioridad;
+    }
+       
 }
