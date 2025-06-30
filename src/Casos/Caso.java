@@ -19,10 +19,31 @@ public class Caso {
     private LocalDate fecha;
     private PrioridadEnum prioridad;
 
+    public int getId() {
+        return id;
+    }
+
+    public Victima getVictima() {
+        return victima;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
 
     public PrioridadEnum getPrioridad() {
         return prioridad;
     }
+    
+    
 
     public Caso(int id, Victima victima, String descripcion, String tipo, LocalDate fecha, PrioridadEnum prioridad) {
         this.id = id;
@@ -36,10 +57,6 @@ public class Caso {
     @Override
     public String toString() {
         return "Caso:" + "id=" + id + ", victima=" + victima + ", descripcion=" + descripcion + ", tipo=" + tipo + ", fecha=" + fecha + ", prioridad=" + prioridad;
-    }
-
-    Object getId() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
