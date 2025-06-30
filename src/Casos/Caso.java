@@ -37,5 +37,9 @@ public class Caso {
     public String toString() {
         return "Caso:" + "id=" + id + ", victima=" + victima + ", descripcion=" + descripcion + ", tipo=" + tipo + ", fecha=" + fecha + ", prioridad=" + prioridad;
     }
+
+    Object getId() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
