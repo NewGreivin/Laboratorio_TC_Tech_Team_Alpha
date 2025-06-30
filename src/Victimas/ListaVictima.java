@@ -1,10 +1,9 @@
 /**
  * @author Greivin
  */
-package ListasVictimas;
+package Victimas;
 
 import Listas.Lista;
-import Victimas.Victima;
 
 public class ListaVictima implements Lista<Victima> {
     private static Victima Victimas[] = new Victima[100];
